@@ -337,7 +337,7 @@
     The winner of a trick:
   </p>
   <ul>
-    <li>Takes the cards into their team’s capture pile.</li>
+    <li>Takes the cards into their team’s capture pile, <strong>except</strong> that if the Low trump card was played in this trick, the player who played that card first removes it and keeps it in their own team’s pile.</li>
     <li>Leads to the next trick.</li>
   </ul>
 
@@ -377,7 +377,9 @@
     <a href="#card-ranking">Card Ranking</a>) is <strong>Low</strong>.
   </p>
   <p>
-    The team that captured that card scores the Low point.
+    The player who <strong>plays</strong> the Low card immediately claims it for their team as the Low point,
+    even if another team wins the trick it was played in. That card is set aside in that team’s capture pile
+    and still counts toward Game scoring as normal.
   </p>
 
   <h3 id="jack-points">9.3 Right &amp; Left Jack (1 point each)</h3>
@@ -481,7 +483,7 @@
   <p>Points per hand:</p>
   <ul>
     <li><strong>High</strong>: Ace of trump captured.</li>
-    <li><strong>Low</strong>: Lowest trump in play captured.</li>
+    <li><strong>Low</strong>: Lowest trump in play; the team of the player who played it keeps that card.</li>
     <li><strong>Right Jack</strong>: Jack of trump captured.</li>
     <li><strong>Left Jack</strong>: Same-color Jack captured.</li>
     <li><strong>Right Joker</strong>: Red Joker captured.</li>
@@ -519,7 +521,7 @@ Players alternate by team around the table.
   <h3 id="trick-flow-diagram">13.2 Trick Flow Sketch</h3>
   <p>Trick order follows seating, clockwise. The leader of a trick plays first:</p>
   <pre class="diagram">
-P1  →  P2  →  P3  →  P4  →  P5  →  P6
+P1  &rarr;  P2  &rarr;  P3  &rarr;  P4  &rarr;  P5  &rarr;  P6
 
 • The designated leader (e.g., highest bidder on the first trick) is P1 in this sketch.
 • After all six cards are played, the highest trump (or highest card in the led suit) wins.
@@ -549,7 +551,7 @@ P1  →  P2  →  P3  →  P4  →  P5  →  P6
     <p><strong>POINTS</strong></p>
     <ul>
       <li>High: Ace of trump.</li>
-      <li>Low: Lowest trump in play.</li>
+      <li>Low: Lowest trump in play; team that played it keeps that card.</li>
       <li>Right Jack: Jack of trump.</li>
       <li>Left Jack: Same-color Jack.</li>
       <li>Right Joker: Red Joker.</li>
@@ -654,11 +656,11 @@ P1  →  P2  →  P3  →  P4  →  P5  →  P6
       <span class="inline-heading">Play (summary):</span>
       <ul>
         <li>Because A♠ is buried, there is no High point this hand.</li>
-        <li>Team B captures:
+        <li>Team B captures or claims:
           <ul>
             <li>J♠ (Right Jack)</li>
             <li>Black Joker (Left Joker)</li>
-            <li>2♠, the lowest trump in play (Low).</li>
+            <li>2♠, the lowest trump in play (Low; played by Team B, so they keep this card for the Low point even if they were to lose that trick).</li>
           </ul>
         </li>
         <li>Team A captures:
