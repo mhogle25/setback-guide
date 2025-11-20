@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>West Michigan Setback Rules</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      max-width: 960px;
+      color: #e5e5e5;
+      background: #202123; /* ChatGPT-like neutral gray */
+    }
+    h1, h2, h3 {
+      font-weight: 600;
+      color: #f9fafb;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.25rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 0.4rem;
+      border-bottom: 1px solid #3a3b3f;
+      padding-bottom: 0.25rem;
+    }
+    h3 {
+      margin-top: 1.25rem;
+      margin-bottom: 0.3rem;
+      color: #e5e7eb;
+    }
+    p {
+      margin: 0.35rem 0 0.7rem 0;
+    }
+    ul, ol {
+      margin: 0.2rem 0 0.8rem 1.5rem;
+    }
+    code {
+      background: #18181b;
+      padding: 0.1rem 0.3rem;
+      border-radius: 3px;
+      font-size: 0.9em;
+      border: 1px solid #3a3b3f;
+    }
+    .note {
+      background: #26272a;
+      border-left: 4px solid #fbbf24;
+      padding: 0.5rem 0.75rem;
+      margin: 0.5rem 0 1rem 0;
+      font-size: 0.95em;
+    }
+    .variant {
+      background: #26272a;
+      border-left: 4px solid #10a37f; /* ChatGPT-ish green accent */
+      padding: 0.5rem 0.75rem;
+      margin: 0.5rem 0 1rem 0;
+      font-size: 0.95em;
+    }
+    a {
+      color: #10a37f;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .toc {
+      background: #26272a;
+      border: 1px solid #3a3b3f;
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.95em;
+    }
+    .toc ul {
+      margin-left: 1rem;
+    }
+    .section-label {
+      font-size: 0.9em;
+      color: #9ca3af;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .inline-heading {
+      font-weight: 600;
+    }
+    pre.diagram {
+      background: #18181b;
+      border: 1px solid #3a3b3f;
+      border-radius: 6px;
+      padding: 0.6rem 0.8rem;
+      font-family: "SF Mono", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.85rem;
+      overflow-x: auto;
+      margin: 0.5rem 0 1rem 0;
+      color: #e5e7eb;
+    }
+    .table-card {
+      background: #26272a;
+      border: 1px dashed #4b5563;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      margin: 0.5rem 0 1.5rem 0;
+      font-size: 0.95em;
+    }
+    .footer-link {
+      margin-top: 2rem;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="top">West Michigan Setback</h1>
+  <p class="section-label">6-Player Cut-Deck, Joker, Bidding Variant</p>
+
+  <div class="toc">
+    <strong>Contents</strong>
+    <ul>
+      <li><a href="#overview">1. Overview</a></li>
+      <li><a href="#players-teams">2. Players &amp; Teams</a></li>
+      <li><a href="#deck-setup">3. Deck &amp; Setup</a></li>
+      <li><a href="#trump-jacks-jokers">4. Trump, Jacks &amp; Jokers</a></li>
+      <li><a href="#card-ranking">5. Card Ranking</a></li>
+      <li><a href="#bidding">6. Bidding</a></li>
+      <li><a href="#choosing-trump">7. Choosing Trump</a></li>
+      <li><a href="#trick-play">8. Trick Play</a></li>
+      <li><a href="#scoring-hand">9. Scoring a Hand</a></li>
+      <li><a href="#applying-bid">10. Applying the Bid</a></li>
+      <li><a href="#winning-game">11. Winning the Game</a></li>
+      <li><a href="#cheat-sheets">12. Cheat Sheets</a></li>
+      <li><a href="#visual-aids">13. Visual Aids &amp; Table Card</a></li>
+      <li><a href="#example-hands">14. Example Hands</a></li>
+    </ul>
+  </div>
+
+  <h2 id="overview">1. Overview</h2>
+  <p>
+    West Michigan Setback is a 6-player, trick-taking partnership game derived from Setback / Pitch.
+    It uses a cut deck with Jokers, a bidding phase to win trump, and a scoring system with up to seven
+    points available per hand.
+  </p>
+  <ul>
+    <li>6 players, <strong>2 teams of 3</strong> (default)</li>
+    <li>Modified deck with all 3s–6s removed, plus two Jokers</li>
+    <li><a href="#bidding">Bidding</a> decides which team chooses trump</li>
+    <li>Jokers are always trump, cannot be led, and follow trump</li>
+    <li>Up to 7 points per hand: High, Low, Right Jack, Left Jack, Right Joker, Left Joker, Game</li>
+  </ul>
+
+  <h2 id="players-teams">2. Players &amp; Teams</h2>
+  <p>
+    The default format is <strong>2 teams of 3 players</strong>.
+  </p>
+  <ul>
+    <li>Players sit alternating by team: A, B, A, B, A, B around the table.</li>
+    <li>Team A: seats 1, 3, 5.</li>
+    <li>Team B: seats 2, 4, 6.</li>
+  </ul>
+  <p>
+    Teammates share a score and combine their captured tricks.
+  </p>
+
+  <h2 id="deck-setup">3. Deck &amp; Setup</h2>
+  <h3 id="deck-composition">3.1 Deck Composition</h3>
+  <p>Start with:</p>
+  <ul>
+    <li>Standard 52-card deck</li>
+    <li>2 Jokers (one red, one black)</li>
+  </ul>
+  <p>
+    Remove all <strong>3s, 4s, 5s, and 6s</strong> from every suit.
+  </p>
+  <p>Remaining:</p>
+  <ul>
+    <li>Per suit: A, K, Q, J, 10, 9, 8, 7, 2 &rarr; 9 ranks &times; 4 suits = 36 cards</li>
+    <li>+ 2 Jokers</li>
+  </ul>
+  <p><strong>Total deck size: 38 cards.</strong></p>
+
+  <h3 id="deal-buried">3.2 Deal &amp; Buried Cards</h3>
+  <ol>
+    <li>Dealer shuffles the 38-card deck.</li>
+    <li>Player to the dealer’s right cuts the deck.</li>
+    <li>Dealer deals <strong>6 cards to each player</strong>, using the full 38-card deck.</li>
+    <li>The <strong>last 2 undealt cards</strong> are placed face-down as the <strong>buried pile</strong> (unseen).</li>
+  </ol>
+  <p>
+    Any point cards in the buried pile are simply <strong>unavailable</strong> for that hand.
+  </p>
+
+  <h2 id="trump-jacks-jokers">4. Trump, Jacks &amp; Jokers</h2>
+  <h3 id="trump-suit">4.1 Trump Suit</h3>
+  <p>
+    The <strong>trump suit</strong> is chosen by the winning bidder on the first trick
+    (see <a href="#choosing-trump">Choosing Trump</a>).
+  </p>
+
+  <h3 id="right-left-jack">4.2 Right &amp; Left Jack</h3>
+  <p>Once trump is set:</p>
+  <ul>
+    <li><strong>Right Jack</strong>: Jack of the trump suit</li>
+    <li><strong>Left Jack</strong>: Jack of the <strong>same-color suit</strong> as trump, in the other suit</li>
+  </ul>
+  <p>Examples:</p>
+  <ul>
+    <li>If ♥ is trump &rarr; Right Jack = J♥, Left Jack = J♦</li>
+    <li>If ♣ is trump &rarr; Right Jack = J♣, Left Jack = J♠</li>
+  </ul>
+  <p>Each Jack is worth <strong>1 point</strong> if it was dealt and captured.</p>
+
+  <h3 id="right-left-joker">4.3 Right &amp; Left Joker</h3>
+  <ul>
+    <li><strong>Right Joker</strong>: Red Joker (higher Joker)</li>
+    <li><strong>Left Joker</strong>: Black Joker (lower Joker)</li>
+  </ul>
+  <p>Jokers:</p>
+  <ul>
+    <li>Are <strong>always trump</strong></li>
+    <li>Count as trump when following suit</li>
+    <li><strong>Cannot be led</strong></li>
+    <li>Each is worth <strong>1 point</strong> if dealt and captured</li>
+  </ul>
+
+  <h2 id="card-ranking">5. Card Ranking</h2>
+  <h3 id="trump-ranking">5.1 Trump Ranking (High &rarr; Low)</h3>
+  <p>
+    Within trump (including Jokers), trick-taking strength from high to low is:
+  </p>
+  <ol>
+    <li>Ace</li>
+    <li>King</li>
+    <li>Queen</li>
+    <li>Right Jack (Jack of trump suit)</li>
+    <li>Left Jack (same-color Jack)</li>
+    <li>Right Joker (Red)</li>
+    <li>Left Joker (Black)</li>
+    <li>10</li>
+    <li>9</li>
+    <li>8</li>
+    <li>7</li>
+    <li>2</li>
+  </ol>
+  <p>
+    This order is used to determine both trick winners and which trump card counts as
+    <strong>Low</strong> (see <a href="#scoring-hand">Scoring a Hand</a>).
+  </p>
+
+  <h3 id="nontrump-ranking">5.2 Non-Trump Suits</h3>
+  <p>
+    In non-trump suits, ranks are:
+  </p>
+  <p><strong>A (high), K, Q, J, 10, 9, 8, 7, 2 (low).</strong></p>
+  <p>Jokers are never part of a non-trump suit; they are always trump.</p>
+
+  <h2 id="bidding">6. Bidding</h2>
+  <p>
+    Bidding determines which team gains the right to choose trump.
+  </p>
+  <h3 id="bidding-timing">6.1 Timing</h3>
+  <p>
+    After the deal, once all players have looked at their 6-card hands and before any cards are played,
+    a single round of bidding is held.
+  </p>
+
+  <h3 id="bidding-procedure">6.2 Procedure</h3>
+  <ol>
+    <li>Starting with the player to the dealer’s left and proceeding clockwise, each player may <strong>bid</strong> or <strong>pass</strong>.</li>
+    <li>A bid is a number of points your <strong>team</strong> promises to earn this hand.</li>
+    <li>Bids must be <strong>strictly higher</strong> than any previous bid.</li>
+    <li>Since there are at most <strong>7 points</strong> in a hand, players typically treat 7 as the effective maximum bid.</li>
+  </ol>
+  <p>
+    When all but one player have passed, the highest bidder wins the bid:
+  </p>
+  <ul>
+    <li>Their team becomes the <strong>bidding team</strong>.</li>
+    <li>The highest bidder becomes the <strong>Trump Leader</strong>.</li>
+  </ul>
+  <div class="variant">
+    <strong>House Rule Option:</strong> If everyone passes, you may force the dealer to take a minimum bid
+    (e.g., 2), or simply redeal the hand.
+  </div>
+
+  <h2 id="choosing-trump">7. Choosing Trump</h2>
+  <p>
+    Trump is set on the <strong>first trick</strong>:
+  </p>
+  <ul>
+    <li>The <strong>Trump Leader</strong> leads the first card of the hand.</li>
+    <li>The suit of that card becomes the <strong>trump suit</strong>.</li>
+    <li>This card is also the first card of the first trick.</li>
+  </ul>
+  <p>
+    Restrictions:
+  </p>
+  <ul>
+    <li>The Trump Leader <strong>must lead a non-Joker card</strong>.</li>
+    <li>Jokers cannot be used to choose trump, because they are not a suit and
+      <strong>Jokers cannot be led</strong>.</li>
+  </ul>
+
+  <h2 id="trick-play">8. Trick Play</h2>
+  <p>
+    Each hand consists of <strong>6 tricks</strong> (each player has 6 cards).
+  </p>
+
+  <h3 id="leading">8.1 Leading</h3>
+  <ul>
+    <li>First trick: led by the <strong>Trump Leader</strong> (who sets trump).</li>
+    <li>Each subsequent trick: led by the player who <strong>won the previous trick</strong>.</li>
+    <li><strong>Jokers may not be led</strong> on any trick.</li>
+  </ul>
+
+  <h3 id="following-trumping">8.2 Following &amp; Trumping</h3>
+  <p>When a suit is led:</p>
+  <ul>
+    <li>If you have cards of the <strong>led suit</strong>:
+      <ul>
+        <li>You may follow suit, or</li>
+        <li>You may choose to <strong>play a trump card instead</strong> (you are allowed to trump even if you could follow suit).</li>
+      </ul>
+    </li>
+    <li>If you have <strong>no cards of the led suit</strong>:
+      <ul>
+        <li>You may play any card (trump or non-trump).</li>
+      </ul>
+    </li>
+  </ul>
+  <p>
+    Jokers:
+  </p>
+  <ul>
+    <li>Count as <strong>trump cards</strong> for all purposes.</li>
+    <li>When trump is led, playing a Joker counts as <strong>following trump</strong>.</li>
+  </ul>
+
+  <h3 id="winning-trick">8.3 Winning a Trick</h3>
+  <ul>
+    <li>If any trump is played, the <strong>highest trump</strong> (see <a href="#card-ranking">Card Ranking</a>)
+        wins the trick.</li>
+    <li>If no trump is played, the <strong>highest card of the led suit</strong> wins.</li>
+  </ul>
+  <p>
+    The winner of a trick:
+  </p>
+  <ul>
+    <li>Takes the cards into their team’s capture pile.</li>
+    <li>Leads to the next trick.</li>
+  </ul>
+
+  <h2 id="scoring-hand">9. Scoring a Hand</h2>
+  <p>
+    After all 6 tricks are played:
+  </p>
+  <ol>
+    <li>Each team gathers their captured cards.</li>
+    <li>Reveal the 2 buried cards so everyone can see which potential point cards were unavailable.</li>
+  </ol>
+  <p>
+    Then award up to <strong>7 points</strong>:
+  </p>
+  <ul>
+    <li>High</li>
+    <li>Low</li>
+    <li>Right Jack</li>
+    <li>Left Jack</li>
+    <li>Right Joker</li>
+    <li>Left Joker</li>
+    <li>Game</li>
+  </ul>
+
+  <h3 id="high">9.1 High (1 point)</h3>
+  <p>
+    <strong>High</strong> is the <strong>Ace of trump</strong>, if it was dealt and captured by a team.
+  </p>
+  <p>
+    If the Ace of trump is in the buried pile, no High point is awarded.
+  </p>
+
+  <h3 id="low">9.2 Low (1 point)</h3>
+  <p>
+    Consider only trump cards that were actually dealt to players (ignore buried cards). Among those,
+    the <strong>lowest-ranked trump</strong> (using the order in
+    <a href="#card-ranking">Card Ranking</a>) is <strong>Low</strong>.
+  </p>
+  <p>
+    The team that captured that card scores the Low point.
+  </p>
+
+  <h3 id="jack-points">9.3 Right &amp; Left Jack (1 point each)</h3>
+  <ul>
+    <li>If the <strong>Right Jack</strong> (trump Jack) was dealt and captured, its team scores 1 point.</li>
+    <li>If the <strong>Left Jack</strong> (same-color Jack) was dealt and captured, its team scores 1 point.</li>
+    <li>If a Jack is buried, its point cannot be scored that hand.</li>
+  </ul>
+
+  <h3 id="joker-points">9.4 Right &amp; Left Joker (1 point each)</h3>
+  <ul>
+    <li>If the <strong>Red Joker (Right Joker)</strong> was dealt and captured, its team scores 1 point.</li>
+    <li>If the <strong>Black Joker (Left Joker)</strong> was dealt and captured, its team scores 1 point.</li>
+    <li>If a Joker is buried, its point is unavailable that hand.</li>
+  </ul>
+
+  <h3 id="game-point">9.5 Game (1 point)</h3>
+  <p>Assign Game values:</p>
+  <ul>
+    <li>10 = 10</li>
+    <li>Ace = 4</li>
+    <li>King = 3</li>
+    <li>Queen = 2</li>
+    <li>Jack (any) = 1</li>
+    <li>All other ranks and both Jokers = 0</li>
+  </ul>
+  <p>
+    Each team sums the Game values of all cards in its capture pile. The team with the
+    <strong>highest total</strong> scores the Game point. If there is a tie, no Game point is awarded.
+  </p>
+
+  <p>
+    The theoretical maximum per hand is <strong>7 points</strong>, though buried cards or a tied Game
+    may lower that number.
+  </p>
+
+  <h2 id="applying-bid">10. Applying the Bid</h2>
+  <p>
+    Let <strong>B</strong> be the winning bid and <strong>P<sub>bid</sub></strong> the total points
+    actually scored by the bidding team from this hand (0–7).
+  </p>
+
+  <h3 id="bid-make">10.1 If the bidding team makes its bid</h3>
+  <p>
+    If <strong>P<sub>bid</sub> &ge; B</strong>, the bidding team <strong>adds
+    P<sub>bid</sub></strong> to its score.
+  </p>
+
+  <h3 id="bid-fail">10.2 If the bidding team fails its bid</h3>
+  <p>
+    If <strong>P<sub>bid</sub> &lt; B</strong>, the bidding team
+    <strong>subtracts B</strong> from its score (they “go down” by their bid).
+  </p>
+  <p>
+    Non-bidding teams simply add the points they earned that hand. Only the bidding team can lose
+    points due to the bid, so scores can go negative.
+  </p>
+
+  <h2 id="winning-game">11. Winning the Game</h2>
+  <ul>
+    <li>Common target scores: <strong>21</strong> or <strong>31</strong>.</li>
+    <li>The first team to reach or exceed the target wins.</li>
+    <li>If multiple teams cross the target in the same hand, the team with the <strong>highest total</strong> wins.</li>
+    <li>If still tied, play another hand as a tiebreaker.</li>
+  </ul>
+
+  <h2 id="cheat-sheets">12. Cheat Sheets</h2>
+
+  <h3 id="quick-flow">12.1 Quick Turn &amp; Bidding Flow</h3>
+  <p>Use this as a high-level reminder of the hand structure:</p>
+  <ul>
+    <li>1. Shuffle and cut the 38-card deck.</li>
+    <li>2. Deal 6 cards to each player (there will be 2 cards left).</li>
+    <li>3. Place the last 2 undealt cards face-down as the buried pile.</li>
+    <li>4. Hold the bidding round (clockwise from left of dealer): bid or pass.</li>
+    <li>5. Highest bidder becomes <strong>Trump Leader</strong> and wins the right to choose trump.</li>
+    <li>6. Trump Leader leads a non-Joker card to the first trick; its suit is trump.</li>
+    <li>7. Play 6 tricks, following or trumping as allowed.</li>
+    <li>8. Reveal buried cards.</li>
+    <li>9. Score High, Low, Jacks, Jokers, and Game.</li>
+    <li>10. Apply the bid: bidding team may gain or lose points.</li>
+    <li>11. Rotate dealer and repeat until a team wins.</li>
+  </ul>
+
+  <h3 id="trump-cheat">12.2 Trump Ranking Cheat Sheet</h3>
+  <p>Trump cards from strongest to weakest:</p>
+  <ol>
+    <li>Ace</li>
+    <li>King</li>
+    <li>Queen</li>
+    <li>Right Jack (trump Jack)</li>
+    <li>Left Jack (same-color Jack)</li>
+    <li>Right Joker (Red)</li>
+    <li>Left Joker (Black)</li>
+    <li>10</li>
+    <li>9</li>
+    <li>8</li>
+    <li>7</li>
+    <li>2</li>
+  </ol>
+
+  <h3 id="score-cheat">12.3 Scoring Summary</h3>
+  <p>Points per hand:</p>
+  <ul>
+    <li><strong>High</strong>: Ace of trump captured.</li>
+    <li><strong>Low</strong>: Lowest trump in play captured.</li>
+    <li><strong>Right Jack</strong>: Jack of trump captured.</li>
+    <li><strong>Left Jack</strong>: Same-color Jack captured.</li>
+    <li><strong>Right Joker</strong>: Red Joker captured.</li>
+    <li><strong>Left Joker</strong>: Black Joker captured.</li>
+    <li><strong>Game</strong>: Most Game-value points captured.</li>
+  </ul>
+  <p>Game card values:</p>
+  <ul>
+    <li>10 = 10</li>
+    <li>A = 4</li>
+    <li>K = 3</li>
+    <li>Q = 2</li>
+    <li>J = 1</li>
+    <li>Others &amp; Jokers = 0</li>
+  </ul>
+
+  <h2 id="visual-aids">13. Visual Aids &amp; Table Card</h2>
+
+  <h3 id="seating-diagram">13.1 Seating Diagram (2 Teams of 3)</h3>
+  <p>Example seating around the table (top view):</p>
+  <pre class="diagram">
+          [ A1 ]
+     [ B3 ]   [ B1 ]
+
+     [ A3 ]   [ A2 ]
+          [ B2 ]
+
+Legend:
+A1, A2, A3 = Team A
+B1, B2, B3 = Team B
+
+Players alternate by team around the table.
+  </pre>
+
+  <h3 id="trick-flow-diagram">13.2 Trick Flow Sketch</h3>
+  <p>Trick order follows seating, clockwise. The leader of a trick plays first:</p>
+  <pre class="diagram">
+P1  →  P2  →  P3  →  P4  →  P5  →  P6
+
+• The designated leader (e.g., Trump Leader on the first trick) is P1 in this sketch.
+• After all six cards are played, the highest trump (or highest card in the led suit) wins.
+• The winner of the trick leads the next one.
+  </pre>
+
+  <h3 id="table-card">13.3 Printable Table Card (Summary)</h3>
+  <p>Photocopy or screenshot this card and keep it on the table:</p>
+  <div class="table-card">
+    <p><strong>TURN ORDER &amp; HAND STRUCTURE</strong></p>
+    <ul>
+      <li>Shuffle and cut.</li>
+      <li>Deal 6 cards to each player; 2 undealt cards become the buried pile.</li>
+      <li>Bid (0–7, strictly increasing bids).</li>
+      <li>Highest bid wins trump choice.</li>
+      <li>Leader’s first non-Joker sets trump.</li>
+      <li>Play 6 tricks.</li>
+      <li>Reveal buried, score all points, apply bid.</li>
+      <li>Rotate dealer; repeat until a team wins.</li>
+    </ul>
+    <p><strong>TRUMP &amp; JOKERS</strong></p>
+    <ul>
+      <li>Trump order: A, K, Q, Right J, Left J, Red Joker, Black Joker, 10, 9, 8, 7, 2.</li>
+      <li>Jokers are always trump.</li>
+      <li>Jokers follow trump; they cannot be led.</li>
+    </ul>
+    <p><strong>POINTS</strong></p>
+    <ul>
+      <li>High: Ace of trump.</li>
+      <li>Low: Lowest trump in play.</li>
+      <li>Right Jack: Jack of trump.</li>
+      <li>Left Jack: Same-color Jack.</li>
+      <li>Right Joker: Red Joker.</li>
+      <li>Left Joker: Black Joker.</li>
+      <li>Game: Most Game-value points (10=10, A=4, K=3, Q=2, J=1).</li>
+    </ul>
+  </div>
+
+  <h2 id="example-hands">14. Example Hands</h2>
+
+  <h3 id="example-1">14.1 Example 1 – Successful Bid with Full Points Available</h3>
+  <p>
+    Teams: Team A (players 1, 3, 5) and Team B (players 2, 4, 6). Target score: 21. Starting score: Team A 0, Team B 0.
+  </p>
+  <ol>
+    <li>
+      <span class="inline-heading">Deal &amp; Buried Cards:</span><br>
+      The deck is shuffled and cut. Six cards are dealt to each player; the last 2 cards are left undealt
+      as the buried pile (unseen). After the hand, the buried pile is revealed to be 9♣ and 2♦.
+      No point cards are buried, so all seven points (High, Low, Right Jack, Left Jack, Right Joker,
+      Left Joker, Game) are available.
+    </li>
+    <li>
+      <span class="inline-heading">Bidding:</span><br>
+      Player 1 (Team A) holds A♥, J♥, 2♥, several other hearts, and the Red Joker.
+      This is a very strong potential trump hand.
+      <ul>
+        <li>Player 1 bids 4.</li>
+        <li>All other players either pass or cannot top 4.</li>
+      </ul>
+      Team A is the bidding team with <strong>B = 4</strong>. Player 1 is the Trump Leader.
+    </li>
+    <li>
+      <span class="inline-heading">Choosing Trump:</span><br>
+      On the first trick, Player 1 leads <strong>A♥</strong>. Hearts become trump.
+    </li>
+    <li>
+      <span class="inline-heading">Play (summary):</span>
+      <ul>
+        <li>Team A uses strong hearts and the Red Joker to control many tricks.</li>
+        <li>They capture:
+          <ul>
+            <li>A♥ (High)</li>
+            <li>2♥ (Low)</li>
+            <li>J♥ (Right Jack)</li>
+            <li>Red Joker (Right Joker)</li>
+            <li>Enough 10s and high cards to win the Game point.</li>
+          </ul>
+        </li>
+        <li>Team B captures:
+          <ul>
+            <li>J♦ (Left Jack)</li>
+            <li>Black Joker (Left Joker)</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <span class="inline-heading">Points this hand:</span>
+      <ul>
+        <li>Team A: High, Low, Right Jack, Right Joker, Game &rarr; <strong>5 points</strong></li>
+        <li>Team B: Left Jack, Left Joker &rarr; <strong>2 points</strong></li>
+      </ul>
+    </li>
+    <li>
+      <span class="inline-heading">Applying the Bid:</span><br>
+      Team A bid 4 and scored P<sub>bid</sub> = 5 &ge; 4, so they <strong>add 5</strong> to their score.
+      Team B adds the 2 points they earned.
+      <p>New totals:</p>
+      <ul>
+        <li>Team A: 5</li>
+        <li>Team B: 2</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h3 id="example-2">14.2 Example 2 – Failed Bid with Buried Point Cards</h3>
+  <p>
+    Continuing from the previous scores: Team A has 5, Team B has 2.
+  </p>
+  <ol>
+    <li>
+      <span class="inline-heading">Deal &amp; Buried Cards:</span><br>
+      The deck is shuffled and cut again. Six cards are dealt to each player; the last 2 cards remain undealt
+      as the buried pile. After the hand, the buried cards are revealed to be A♠ and the Red Joker.
+      That means <strong>High</strong> and the <strong>Right Joker</strong> cannot be scored this hand.
+    </li>
+    <li>
+      <span class="inline-heading">Bidding:</span><br>
+      Player 2 (Team B) sees a strong spade hand: K♠, Q♠, J♠, several other spades, and the Black Joker.
+      <ul>
+        <li>Confident in spades, Player 2 bids 5.</li>
+        <li>No one else can or wants to top 5.</li>
+      </ul>
+      Team B is the bidding team with <strong>B = 5</strong>. Player 2 is the Trump Leader.
+    </li>
+    <li>
+      <span class="inline-heading">Choosing Trump:</span><br>
+      On the first trick, Player 2 leads K♠, making <strong>spades trump</strong>.
+    </li>
+    <li>
+      <span class="inline-heading">Play (summary):</span>
+      <ul>
+        <li>Because A♠ is buried, there is no High point this hand.</li>
+        <li>Team B captures:
+          <ul>
+            <li>J♠ (Right Jack)</li>
+            <li>Black Joker (Left Joker)</li>
+            <li>2♠, the lowest trump in play (Low).</li>
+          </ul>
+        </li>
+        <li>Team A captures:
+          <ul>
+            <li>J♣ (Left Jack)</li>
+            <li>More 10s and high cards, giving them the Game point.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <span class="inline-heading">Points this hand:</span>
+      <ul>
+        <li>Team B: Low, Right Jack, Left Joker &rarr; <strong>3 points</strong></li>
+        <li>Team A: Left Jack, Game &rarr; <strong>2 points</strong></li>
+      </ul>
+      <p>
+        (Only 5 points are available this hand: Low, Right Jack, Left Jack, Left Joker, Game.
+        High and Right Joker are buried.)
+      </p>
+    </li>
+    <li>
+      <span class="inline-heading">Applying the Bid:</span><br>
+      Team B bid 5 but scored P<sub>bid</sub> = 3 &lt; 5, so they <strong>lose 5 points</strong>.
+      Team A simply adds the 2 points they earned.
+      <p>Updated overall scores:</p>
+      <ul>
+        <li>Team A: previous 5 + 2 = <strong>7</strong></li>
+        <li>Team B: previous 2 + 3 − 5 = <strong>0</strong></li>
+      </ul>
+      <p>
+        Play continues with new hands following the same structure until a team reaches
+        the chosen target score (see <a href="#winning-game">Winning the Game</a>).
+      </p>
+    </li>
+  </ol>
+
+  <p class="footer-link">
+    <a href="#top">Back to top</a>
+  </p>
+</body>
+</html>
