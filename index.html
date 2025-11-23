@@ -16,7 +16,7 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.6;
       margin: 40px;
-      max-width: 960px;
+      max-width: 1080px;
       color: #e5e5e5;
       background: #202123; 
     }
@@ -59,7 +59,7 @@
       margin: 0.5rem 0 1rem 0;
       font-size: 0.95em;
     }
-    .variant {
+    .note-variant {
       background: #26272a;
       border-left: 4px solid #10a37f; 
       padding: 0.5rem 0.75rem;
@@ -140,6 +140,7 @@
       <li><a href="#cheat-sheets">12. Cheat Sheets</a></li>
       <li><a href="#visual-aids">13. Visual Aids &amp; Table Card</a></li>
       <li><a href="#example-hands">14. Example Hands</a></li>
+      <li><a href="#variants">15. Variants</a></li>
     </ul>
   </div>
 
@@ -150,7 +151,7 @@
     points available per hand.
   </p>
   <ul>
-    <li>6 players, <strong>2 teams of 3</strong> (default)</li>
+    <li>6 players, <strong>2 teams of 3</strong> (for other player/team configurations, see <a href="#variants">variants</a>)</li>
     <li>Modified deck with all 3s–6s removed, plus two Jokers</li>
     <li><a href="#bidding">Bidding</a> decides which team chooses trump</li>
     <li>Jokers are always trump, and if led on the first hand, let the highest bidder pick any suit as trump.</li>
@@ -285,7 +286,7 @@
   <ul>
     <li>Their team becomes the <strong>bidding team</strong>.</li>
   </ul>
-  <div class="variant">
+  <div class="note-variant">
     <strong>House Rule Option:</strong> If everyone passes, you may force the dealer to take a minimum bid
     (e.g., 2), or simply redeal the hand.
   </div>
@@ -703,6 +704,63 @@ P1  &rarr;  P2  &rarr;  P3  &rarr;  P4  &rarr;  P5  &rarr;  P6
         Play continues with new hands following the same structure until a team reaches
         the chosen target score (see <a href="#winning-game">Winning the Game</a>).
       </p>
+    </li>
+  </ol>
+
+  <h2 id="variants">15. Variants</h2>
+
+  <h3 id="variant-1">15.1 4-Player Setback</h3>
+  <p>
+    There is a variant of setback that can be played with 4 players by applying the following modifications to the rules:
+  </p>
+  <ol>
+    <li>Instead of 2 teams of 3, play with <strong>2 teams of 2</strong>. Seating order should still alternate by team: A, B, A, B, around the table.</li>
+    <li>Instead of cutting all 3s–6s, <strong>cut all 3s-8s</strong>. This leaves you with a deck of <strong>30 cards</strong>, including jokers.</li>
+    <ul>
+      <li>After dealing 6 cards to each player, there will be <strong>6 cards buried</strong>.
+    </ul>
+    <li>All other rules remain the same.</li>
+  </ol>
+
+  <h3 id="variant-2">15.2 5-Player Call Your Partner</h3>
+  <p>
+    This variant of setback supports 5 players by changing the way team selection and scoring works.
+  </p>
+  <ol>
+    <li><strong>Deck &amp; deal</strong>
+      <ul>
+        <li>Remove all <strong>3s–7s</strong>. Each suit keeps A, K, Q, J, 10, 9, 8, 2 for 32 cards + 2 Jokers = <strong>34 cards</strong>.</li>
+        <li>Deal 6 cards to each player; leave <strong>4 cards buried</strong>. Buried point cards are unavailable.</li>
+      </ul>
+    </li>
+    <li><strong>Everyone starts solo</strong>
+      <ul>
+        <li>No fixed teams; seating can be random or spaced evenly.</li>
+        <li>Each player tracks an <strong>individual score</strong>.</li>
+      </ul>
+    </li>
+    <li><strong>Call your partner after bidding</strong>
+      <ul>
+        <li>Hold a normal bidding round.</li>
+        <li>The highest bidder leads the first card (setting trump as usual) and names any specific card (rank + suit) that must be in play.</li>
+        <li>Whoever holds that named card becomes the bidder’s partner for the hand.</li>
+        <li>The remaining players form the opposing team (3 players if a partner is found, 4 if the called card is buried).</li>
+      </ul>
+    </li>
+    <li><strong>Scoring and bids per player</strong>
+      <ul>
+        <li>Points are earned by the hand’s temporary teams, but <em>each</em> teammate adds that total to their own score (e.g., a 3-point team hand gives each teammate +3).</li>
+        <li>The bidding team (bidder alone or bidder + called partner) succeeds or fails together: if they make the bid, every player on that team adds the points they earned; if they miss, every player on that team subtracts the full bid.</li>
+        <li>The opposing team simply adds the points they earned.</li>
+      </ul>
+    </li>
+    <li><strong>Winning</strong>
+      <ul>
+        <li>Play until a player reaches 21 points.</li>
+        <li>If multiple players reach or exceed the target in the same hand, the <strong>highest bidder</strong> wins.</li>
+        <li>If the highest bidder is not in the tie, the tied player with the <strong>highest total score</strong> wins.</li>
+        <li>If still tied, all tied players win together.</li>
+      </ul>
     </li>
   </ol>
 
